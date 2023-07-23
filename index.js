@@ -104,10 +104,19 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+	return fs.writeFileSync(path.dirname('C:/Users/Aaron/Desktop/gen-rm/utils',fileName),data);
+	//fs.writeFileSync(path.join(cwd)file), data;
+}
+writeToFile;
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+	inquirer.prompt(questions).then((responses) => {
+		console.log("Creating your Professoinal README.md file.");
+		writeToFile("./generate/README.md", generateMarkdown({ ...responses }));
+	});
+}
 
 // Function call to initialize app
 init();
