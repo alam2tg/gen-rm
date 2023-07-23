@@ -22,7 +22,7 @@ const questions = [
 		type: "list",
 		name: "license",
 		message: "What license are you using for your project?",
-		choices: ["None","MIT","Apache_2.0","bsl-1.0","gpl-3.0","mpl-2.0","ms-pl","osl-3.0"],
+		choices: ["None","Apache 2.0","MIT","MPL-2.0"],
 		validate: licenseInput = () => {
 			if (licenseInput) {
 				return true;
@@ -34,7 +34,7 @@ const questions = [
 	},
 	{
 		type: "input",
-		name: "Description",
+		name: "description",
 		message: "Please describe the purpose and functionality of this project.",
 		validate: (descriptionInput = () => {
 			if (descriptionInput) {
@@ -47,7 +47,7 @@ const questions = [
 	},
 	{
 		type: "input",
-		name: "Installation",
+		name: "installation",
 		message:
 			"Please list any requirements to install your project. Provide a step-by-step guide.",
 		validate: (installationInput = () => {
@@ -60,7 +60,7 @@ const questions = [
 	},
 	{
 		type: "input",
-		name: "Usage",
+		name: "usage",
 		message:
 			"Please provide any instructions for use such as language/technologies.",
 		validate: (usageInput = () => {
