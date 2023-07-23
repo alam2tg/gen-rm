@@ -1,15 +1,18 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Aaron Lam",
+  "github": "https://github.com/alam2tg",
+  "linkedin": "https://www.linkedin.com/in/lam-aaron2/",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^8.2.5"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {},
+  "description": ""
 }

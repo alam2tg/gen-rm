@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const path = require("path");
-const generateMarkdown = require("generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
 
 // TODO: Create an array of questions for user input
@@ -57,24 +57,36 @@ const questions = [
 				return false;
 			}
 		}),
-	},
-	{
+	},{
 		type: "Input",
-		name: "Credits",
-		message:
-			"Add any contributor's Github's with a short message here. If none, enter N/A.",
-	},
-	{
+		name: "name",
+		message: "Enter your first and last name.",
+	},{
+		type: "Input",
+		name: "email",
+		message: "Enter your email",
+	},{
+		type: "Input",
+		name: "github",
+		message: "Enter your Github",
+	},{
+		type: "Input",
+		name: "credits",
+		message: "Add any contributor's Github's with a short message here. If none, enter N/A.",
+	},{
 		type: "list",
 		name: "License",
 		message: "What license are you using for your project?",
-		choices: [
+		choices: [  //None, MIT, Apache, Boost Software License 1.0, General Public License 3.0, Microsoft Public License, Open Software License 3.0
 			"None",
 			"MIT",
 			"Apache 2.0",
-			"Mozilla Public License 2.0",
-			"Open Software License 3.0",
-		],
+			"bsl-1.0",
+			"gpl-3.0",
+			"mpl-2.0",
+			"ms-pl",
+			"osl-3.0",
+		], 
 		validate: (licenseInput = () => {
 			if (licenseInput) {
 				return true;
