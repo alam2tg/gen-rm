@@ -3,12 +3,12 @@ function renderLicenseBadge(license) {
   if (license === "None") {
     badge = '';
   } else if (license === "Apache 2.0") {
-    badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+    badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`
   } else if (license === "MIT") {
-    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
   } else if (license === "MPL-2.0") {
-    badge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
-  }    
+    badge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]`
+  } 
   return badge;
 }
 
@@ -20,13 +20,14 @@ function renderLicenseLink(license) {
   }
 }
 
+
 function renderLicenseSection(license) {
   if (license === "none") {
     return "";
   } else {
     return license = `## License
     Licensed under the ${license} license.`
-  }  
+  }
 }
 
 function generateMarkdown(data) {
@@ -34,7 +35,8 @@ function generateMarkdown(data) {
   # ${data.title}
   by ${data.name}
 
-  ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   ${renderLicenseLink(data.license)}
