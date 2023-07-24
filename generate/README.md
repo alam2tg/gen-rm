@@ -1,6 +1,7 @@
 
   # README Generator
-  by Aaron Lam
+  ## by Aaron Lam
+
   ## License
     Licensed under the MIT license. 
   * [License](#license)
@@ -36,4 +37,3 @@
 
   ## Questions
    Please send your questions [here](mailto:aaronlamfinance@gmail.com)
-  

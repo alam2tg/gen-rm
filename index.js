@@ -22,7 +22,7 @@ const questions = [
 		type: "list",
 		name: "license",
 		message: "What license are you using for your project?",
-		choices: ["None","Apache 2.0","MIT","MPL-2.0"],
+		choices: ["None","Apache 2.0","MIT","MPL-2.0",],
 		validate: licenseInput = () => {
 			if (licenseInput) {
 				return true;
