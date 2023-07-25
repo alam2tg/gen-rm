@@ -1,6 +1,8 @@
 
-  # REAADME Generator
+  # README Generator
   ### by Aaron Lam
+  https://github.com/alam2tg/gen-rm
+  https://alam2tg.github.io/gen-rm/
 
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

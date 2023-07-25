@@ -1,4 +1,3 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
@@ -17,8 +16,7 @@ const questions = [
 				return false;
 			}
 		},
-	},
-	{
+	},{
 		type: "list",
 		name: "license",
 		message: "What license are you using for your project?",
@@ -31,8 +29,7 @@ const questions = [
 				return false;
 			}
 		},
-	},
-	{
+	},{
 		type: "input",
 		name: "description",
 		message: "Please describe the purpose and functionality of this project.",
@@ -44,8 +41,7 @@ const questions = [
 				return false;
 			}
 		}),
-	},
-	{
+	},{
 		type: "input",
 		name: "installation",
 		message:
@@ -57,8 +53,7 @@ const questions = [
 				return false;
 			}
 		}),
-	},
-	{
+	},{
 		type: "input",
 		name: "usage",
 		message:
@@ -71,23 +66,19 @@ const questions = [
 				return false;
 			}
 		}),
-	},
-	{
+	},{
 		type: "Input",
 		name: "name",
 		message: "Enter your first and last name.",
-	},
-	{
+	},{
 		type: "Input",
 		name: "email",
 		message: "Enter your email",
-	},
-	{
+	},{
 		type: "Input",
 		name: "github",
 		message: "Enter your Github username (not the url, just name)",
-	},
-	{
+	},{
 		type: "Input",
 		name: "credits",
 		message:
@@ -104,16 +95,15 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-	return fs.
-	writeFileSync(path.join(process.cwd(), fileName),data);
+	return fs.writeFileSync(path.join(process.cwd(), fileName),data);
 }
 
 function init() {
 	inquirer.prompt(questions)
 	.then((responses) => {
-		console.log("Creating your Professoinal README.md file...");
+		console.log();
 		writeToFile("./generate/README.md", generateMarkdown({ ...responses }));
-	});
+	})
 }
 
 init();
