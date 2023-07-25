@@ -17,7 +17,7 @@ const questions = [
 				return false;
 			}
 		},
-	},	
+	},
 	{
 		type: "list",
 		name: "license",
@@ -104,7 +104,8 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-	return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+	return fs.
+	writeFileSync(path.join(process.cwd(), fileName),data);
 }
 
 function init() {
