@@ -1,4 +1,3 @@
-
 # README Generator
 ### by Aaron Lam
 https://github.com/alam2tg/gen-rm

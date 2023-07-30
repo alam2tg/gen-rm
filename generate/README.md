@@ -1,5 +1,5 @@
 
-  # Project
+  # Industry Focus
   ### by Aaron Lam
 
 
@@ -19,13 +19,13 @@
   * [Questions](#questions)
 
   ## Description
-  To test if I can generate a readme and record it!
+  To provide industry specific stock market data
 
   ## Installation
-  Inquirer, Nodejs
+  N/A
 
   ## Usage
-  Javascript
+  N/A
   
   ## Contact Me
   * Name - Aaron Lam
@@ -33,10 +33,10 @@
   * Github - ![Github](https://github.com/alam2tg)
   
   ## Credits
-  Credits
+  N/A
 
   ## Tests
-  N/A
+  
 
   ## Questions
    Please send your questions [here](mailto:aaronlamfinance@gmail.com)
